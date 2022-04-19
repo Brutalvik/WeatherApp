@@ -10,7 +10,7 @@ messageTwo.textContent = '';
 weatherSearch.addEventListener('submit', (event) => {
   event.preventDefault();
   messageOne.textContent = 'Loading...';
-  fetch(`http://localhost:3000/weather?search=${event.target[0].value}`)
+  fetch(`/weather?search=${event.target[0].value}`)
     .then((response) => {
       return response.json();
     })
