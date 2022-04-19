@@ -83,7 +83,7 @@ app.get('*', (req, res) => {
   res.render('404', {
     title: '404 Not Found',
     name: 'Vikram Kumar',
-    text: 'The page you are trying to find is not available',
+    text: 'The page you are trying does not exist',
   });
 });
 
